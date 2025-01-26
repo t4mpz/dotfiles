@@ -1,0 +1,9 @@
+# Base void linux runit initial config file
+# leave it at /etc/rc.local
+
+# removes rfkill lock
+# for unknown reasons it keeps blocking wifi after startup
+/usr/sbin/rfkill unblock all
+
+# it's commented but it starts the xorg server
+# startx
