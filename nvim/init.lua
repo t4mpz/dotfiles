@@ -6,3 +6,11 @@ vim.keymap.set('n', '<Leader>ff', builtin.find_files, { desc = 'Telescope the fi
 vim.keymap.set('n', '<Leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })
 vim.keymap.set('n', '<Leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
 vim.keymap.set('n', '<Leader>fh', builtin.help_tags, { desc = 'Telescope help' })
+
+require("nightfox").setup({
+	transparent = vim.g.transparent_enabled,
+	styles = {
+		sidebars = "transparent",
+		floats   = "transparent", 
+	},
+})

@@ -18,6 +18,9 @@ return {
 	{
 		"nvim-telescope/telescope.nvim",
 		lazy = false,
-	}
-
+	},
+	{
+		"xiyaowong/transparent.nvim",
+		lazy = false,
+	},
 }
