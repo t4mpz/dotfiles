@@ -23,4 +23,20 @@ return {
 		"xiyaowong/transparent.nvim",
 		lazy = false,
 	},
+	{
+		"hrsh7th/nvim-cmp",
+		lazy = false,
+	},
+	{
+		"hrsh7th/cmp-nvim-lsp",
+		lazy = false
+	},
+	{
+		"mason-org/mason-lspconfig.nvim",
+		opts = {},
+		dependencies = {
+			{ "mason-org/mason.nvim", opts = {} },
+			"neovim/nvim-lspconfig",
+		},
+	}
 }
