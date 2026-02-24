@@ -14,6 +14,13 @@ return {
 	{
 		"nvim-tree/nvim-tree.lua",
 		lazy = false,
+		version = "*",
+		dependencies = {
+			"nvim-tree/nvim-web-devicons",
+		},
+		config = function()
+			require("nvim-tree").setup {}
+		end,
 	},
 	{
 		"nvim-telescope/telescope.nvim",
@@ -38,5 +45,9 @@ return {
 			{ "mason-org/mason.nvim", opts = {} },
 			"neovim/nvim-lspconfig",
 		},
-	}
+	},
+	{
+		"simrat39/rust-tools.nvim",
+		lazy = false
+	},
 }
